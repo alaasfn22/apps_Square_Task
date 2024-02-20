@@ -29,7 +29,9 @@ const ViewRestDetailsModal = () => {
             </h4>
             <div className="flex justify-around capitalize mb-4">
               <div className="text-center">
-                <h4 className="text-lg font-medium text-primary mb-2">12</h4>
+                <h4 className="text-lg font-medium text-primary mb-2">
+                  {restaurantDetails?.data?.products.length}
+                </h4>
                 <h5 className="text-sm text-gray-800 dark:text-white">
                   {t("total product")}
                 </h5>

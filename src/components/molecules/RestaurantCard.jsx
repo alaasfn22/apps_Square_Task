@@ -1,8 +1,5 @@
 /* eslint-disable react/prop-types */
 import {IoLocationOutline} from "react-icons/io5";
-import resImg from "../../assets/2-95b90f07.png";
-import {MdOutlineMail} from "react-icons/md";
-import {FiPhone} from "react-icons/fi";
 import CustomeButton from "../atoms/CustomeButton";
 const RestaurantCard = ({t, ...props}) => {
   return (
@@ -19,7 +16,9 @@ const RestaurantCard = ({t, ...props}) => {
         </h4>
         <div className="flex justify-around capitalize mb-8">
           <div className="text-center">
-            <h4 className="text-lg font-medium text-primary mb-2.5">12</h4>
+            <h4 className="text-lg font-medium text-primary mb-2.5">
+              {props?.products.length}
+            </h4>
             <h5 className="text-sm text-gray-800 dark:text-white">
               {t("total product")}
             </h5>
